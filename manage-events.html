@@ -112,7 +112,7 @@
             role="tablist"
           >
             <button
-              class="nav-link Approved"
+              class="nav-link ✔ Completed "
               id="switcher-home-tab"
               data-bs-toggle="tab"
               data-bs-target="#switcher-home"
@@ -141,7 +141,7 @@
       <div class="offcanvas-body">
         <div class="tab-content" id="nav-tabContent">
           <div
-            class="tab-pane fade show Approved border-0"
+            class="tab-pane fade show ✔ Completed  border-0"
             id="switcher-home"
             role="tabpanel"
             aria-labelledby="switcher-home-tab"
@@ -1430,7 +1430,7 @@
               >
                 <li>
                   <div class="dropdown-item text-center border-bottom">
-                    <span> Raja Shukla </span>
+                    <span> Company ! </span>
                     <span class="d-block fs-12 text-muted">RO Dashboard</span>
                   </div>
                 </li>
@@ -1981,23 +1981,22 @@
                 <ol class="breadcrumb mb-1">
                   <li class="breadcrumb-item">
                     <a href="javascript:void(0);" style="color: #d01f2f"
-                      >Supplies Information</a
+                      >Events & Trainings</a
                     >
                   </li>
-                  <li class="breadcrumb-item Approved" aria-current="page">
-                    View All Supplies
+                  <li class="breadcrumb-item ✔ Completed " aria-current="page">
+                    View All Events
                   </li>
                 </ol>
               </nav>
               <h1 class="page-title fw-medium fs-18 mb-0">
-                Manage Supplies
+                Manage Events
               </h1>
             </div>
             <div class="btn-list">
               <button class="btn btn-white btn-wave" style="background-color: gainsboro !important; border-radius: 10px;">
-                </i> Total Issued
-                Supplies <br />
-               <span> <b>8</b></span> 
+                </i> Total Open Events <br />
+               <span> <b>26</b></span> 
               </button>
               <button class="btn btn-danger btn-wave me-0">
                 <i class="ri-share-forward-line me-1"></i> Export List
@@ -2009,7 +2008,7 @@
           <!-- Start::row-1 -->
           <div class="card custom-card" style="background-color: gainsboro">
             <div class="card-header justify-content-between">
-              <div class="card-title">All Supplies List</div>
+              <div class="card-title">All Events List</div>
               <div class="d-flex gap-3 align-items-center flex-wrap">
                 <div class="btn-group">
                   <button
@@ -2018,7 +2017,7 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <i class="ti ti-sort-descending-2 me-1"></i> Region
+                    <i class="ti ti-sort-descending-2 me-1"></i> July
                   </button>
 
                   <button
@@ -2027,15 +2026,7 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <i class="ti ti-sort-descending-2 me-1"></i> Chapter
-                  </button>
-                  <button
-                    class="btn btn-outline-light border dropdown-toggle"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <i class="ti ti-sort-descending-2 me-1"></i> Member
+                    <i class="ti ti-sort-descending-2 me-1"></i> Monthly
                   </button>
                   <button
                     class="btn btn-outline-light border dropdown-toggle"
@@ -2051,15 +2042,15 @@
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    + Add Supplies
+                    + Add Event Type
                   </button>
                 </div>
                 <div class="custom-form-group flex-grow-1">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Search Supply.."
-                    aria-label="Recipient's username"
+                    placeholder="Search Event.."
+                    aria-label="Event : custom'id"
                     aria-describedby="button-addon2"
                   />
                   <a
@@ -2079,12 +2070,13 @@
                   <thead>
                     <tr>
                       <th scope="col">S.No.</th>
-                      <th scope="col">Supplies Name</th>
-                      <th scope="col">Member Name</th>
-                      <th scope="col">Issued To</th>
-                      <th scope="col">Chapter Name</th>
-                      <th scope="col">Issued Date</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Billing Company</th>
                       <th scope="col">Status</th>
+                      <th scope="col">Venue</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Event</th>
+                      <th scope="col">Event Type</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -2096,34 +2088,23 @@
                             <p
                               class="fw-semibold mb-0 d-flex align-items-center"
                             >
-                              <a href="order-details.html">Induction Kit</a>
+                              <a href="order-details.html">₹ 40,000 <br> <span style="color: #32CD32;">View</span></a>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <span class="avatar avatar-sm me-2 avatar-rounded">
-                            <img
-                              src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                              alt=""
-                            /> </span
-                          >Raja Shukla
+                      <b>Company 1</b>   
                         </div>
                       </td>
-                      <td>#1222516</td>
-                      <td>Prolific</td>
-                      <td class="fw-semibold">11 Jan 2024</td>
+                      <td><span class="badge bg-warning">Upcoming</span></td>
+                      <td>South Ex.</td>
+                      <td class="fw-semibold" style="color:#d01f2f;">11 Jan 2024</td>
+                      <td class="fw-semibold">TAP</td>
                       <td>
-                        <span class="badge bg-danger-transparent"
-                          >Declined</span
-                        >
-                        <a
-                          href="order-details.html"
-                          class="btn btn-icon btn-sm btn-primary-light btn-wave waves-effect waves-light"
-                        >
-                          <i class="ri-eye-line"></i>
-                        </a>
+                        Type 1
+                        
                       </td>
                     </tr>
                     <tr class="order-list">
@@ -2134,32 +2115,22 @@
                             <p
                               class="fw-semibold mb-0 d-flex align-items-center"
                             >
-                              <a href="order-details.html">Black Badge</a>
+                              <a href="order-details.html">₹37,000 <br> <span style="color: #32CD32;">View</span></a>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <span class="avatar avatar-sm me-2 avatar-rounded">
-                            <img
-                              src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                              alt=""
-                            /> </span
-                          >Rajat Arora
+                       <b>Company 1</b>  
                         </div>
                       </td>
-                      <td>#1222516</td>
-                      <td>Dynamic</td>
-                      <td class="fw-semibold">11 Jan 2024</td>
+                      <td><span class="badge bg-success">✔ Completed </span></td>
+                      <td>Welcome Hotel</td>
+                      <td class="fw-semibold" style="color:#d01f2f;">11 Jan 2024</td>
+                      <td class="fw-semibold">DJ Night</td>
                       <td>
-                        <span class="badge bg-success-transparent">Approved</span>
-                        <a
-                          href="order-details.html"
-                          class="btn btn-icon btn-sm btn-primary-light btn-wave waves-effect waves-light"
-                        >
-                          <i class="ri-eye-line"></i>
-                        </a>
+                        Type 1
                       </td>
                     </tr>
                     <tr class="order-list">
@@ -2170,33 +2141,23 @@
                             <p
                               class="fw-semibold mb-0 d-flex align-items-center"
                             >
-                              <a href="order-details.html">BNI Diary</a>
+                              <a href="order-details.html">₹33,000 <br> <span style="color: #32CD32;">View</span></a>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <span class="avatar avatar-sm me-2 avatar-rounded">
-                            <img
-                              src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                              alt=""
-                            /> </span
-                          >DS Mehta
+                        <b>Company 2</b>  
                         </div>
                       </td>
-                      <td>#1222516</td>
-                      <td>Champions</td>
+                      <td><span class="badge bg-success">✔ Completed </span></td>
+                      <td>Dwarka</td>
 
-                      <td class="fw-semibold">11 Jan 2024</td>
+                      <td class="fw-semibold" style="color:#d01f2f;">11 Jan 2024</td>
+                      <td class="fw-semibold">Induction Training</td>
                       <td>
-                        <span class="badge bg-success-transparent">Approved</span>
-                        <a
-                          href="order-details.html"
-                          class="btn btn-icon btn-sm btn-primary-light btn-wave waves-effect waves-light"
-                        >
-                          <i class="ri-eye-line"></i>
-                        </a>
+                        Type 1
                       </td>
                     </tr>
                     <tr class="order-list">
@@ -2207,34 +2168,22 @@
                             <p
                               class="fw-semibold mb-0 d-flex align-items-center"
                             >
-                              <a href="order-details.html">Name Badge</a>
+                              <a href="order-details.html">₹27,000 <br> <span style="color: #32CD32;">View</span></a>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <span class="avatar avatar-sm me-2 avatar-rounded">
-                            <img
-                              src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                              alt=""
-                            /> </span
-                          >Parul Gupta
+                       <b>Company 2</b>  
                         </div>
                       </td>
-                      <td>#125222</td>
-                      <td>Elegant</td>
-                      <td class="fw-semibold">11 Jan 2024</td>
+                      <td><span class="badge bg-warning">Upcoming</span></td>
+                      <td>Paschim Vihar</td>
+                      <td class="fw-semibold" style="color:#d01f2f;">11 Jan 2024</td>
+                      <td class="fw-semibold">Weekly Meeting</td>
                       <td>
-                        <span class="badge bg-danger-transparent"
-                          >Declined</span
-                        >
-                        <a
-                          href="order-details.html"
-                          class="btn btn-icon btn-sm btn-primary-light btn-wave waves-effect waves-light"
-                        >
-                          <i class="ri-eye-line"></i>
-                        </a>
+                        Type 1
                       </td>
                     </tr>
                     <tr class="order-list">
@@ -2245,32 +2194,22 @@
                             <p
                               class="fw-semibold mb-0 d-flex align-items-center"
                             >
-                              <a href="order-details.html"> Signage</a>
+                              <a href="order-details.html">₹22,000 <br> <span style="color: #32CD32;">View</span></a>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <span class="avatar avatar-sm me-2 avatar-rounded">
-                            <img
-                              src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                              alt=""
-                            /> </span
-                          >Sachit Chawla
+                       <b>Company 1</b>   
                         </div>
                       </td>
-                      <td>#1222516</td>
-                      <td>BNI Enhance</td>
-                      <td class="fw-semibold">11 Jan 2024</td>
+                      <td><span class="badge bg-warning">Upcoming</span></td>
+                      <td>Kirti Nagar</td>
+                      <td class="fw-semibold" style="color:#d01f2f;">11 Jan 2024</td>
+                      <td class="fw-semibold">Dinner</td>
                       <td>
-                        <span class="badge bg-success-transparent">Approved</span>
-                        <a
-                          href="order-details.html"
-                          class="btn btn-icon btn-sm btn-primary-light btn-wave waves-effect waves-light"
-                        >
-                          <i class="ri-eye-line"></i>
-                        </a>
+                        Type 1
                       </td>
                     </tr>
                     <tr class="order-list">
@@ -2281,34 +2220,22 @@
                             <p
                               class="fw-semibold mb-0 d-flex align-items-center"
                             >
-                              <a href="order-details.html">Goal Board</a>
+                              <a href="order-details.html">₹18,000 <br> <span style="color: #32CD32;">View</span></a>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <span class="avatar avatar-sm me-2 avatar-rounded">
-                            <img
-                              src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                              alt=""
-                            /> </span
-                          >Manish Mahajan
+                     <b>Company 2</b>   
                         </div>
                       </td>
-                      <td>#1222516</td>
-                      <td>BNI More</td>
-                      <td class="fw-semibold">11 Jan 2024</td>
+                      <td><span class="badge bg-success">✔ Completed </span></td>
+                      <td>Umrao</td>
+                      <td class="fw-semibold" style="color:#d01f2f;">11 Jan 2024</td>
+                      <td class="fw-semibold">Party</td>
                       <td>
-                        <span class="badge bg-danger-transparent"
-                          >Declined</span
-                        >
-                        <a
-                          href="order-details.html"
-                          class="btn btn-icon btn-sm btn-primary-light btn-wave waves-effect waves-light"
-                        >
-                          <i class="ri-eye-line"></i>
-                        </a>
+                        Type 1
                       </td>
                     </tr>
                     <tr class="order-list">
@@ -2319,32 +2246,22 @@
                             <p
                               class="fw-semibold mb-0 d-flex align-items-center"
                             >
-                              <a href="order-details.html">Invition Card</a>
+                              <a href="order-details.html">₹17,000 <br> <span style="color: #32CD32;">View</span></a>
                             </p>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <span class="avatar avatar-sm me-2 avatar-rounded">
-                            <img
-                              src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                              alt=""
-                            /> </span
-                          >Amit Anand
+                       <b>Company 2</b>  
                         </div>
                       </td>
-                      <td>#1222516</td>
-                      <td>BNI Signature</td>
-                      <td class="fw-semibold">11 Jan 2024</td>
+                      <td><span class="badge bg-warning">Upcoming</span></td>
+                      <td>Vilas Villa by Taj</td>
+                      <td class="fw-semibold" style="color:#d01f2f;">11 Jan 2024</td>
+                      <td class="fw-semibold">Drinks</td>
                       <td>
-                        <span class="badge bg-warning-transparent">Pending</span>
-                        <a
-                          href="order-details.html"
-                          class="btn btn-icon btn-sm btn-primary-light btn-wave waves-effect waves-light"
-                        >
-                          <i class="ri-eye-line"></i>
-                        </a>
+                        Type 1
                       </td>
                     </tr>
                   </tbody>
@@ -2362,7 +2279,7 @@
                     <li class="page-item disabled">
                       <a class="page-link">Previous</a>
                     </li>
-                    <li class="page-item Approved" aria-current="page">
+                    <li class="page-item ✔ Completed " aria-current="page">
                       <a class="page-link" href="javascript:void(0)">1</a>
                     </li>
                     <li class="page-item">
