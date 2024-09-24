@@ -83,15 +83,6 @@
 
     <!-- FlatPickr CSS -->
     <link rel="stylesheet" href="assets/libs/flatpickr/flatpickr.min.css" />
-    <style>
-      .bg-primary {
-        background-color: #d01f2f !important;
-      }
-      .btn-primary {
-        background-color: #d01f2f !important;
-        border: #d01f2f;
-      }
-    </style>
   </head>
 
   <body class="">
@@ -121,7 +112,7 @@
             role="tablist"
           >
             <button
-              class="nav-link 989178547"
+              class="nav-link active"
               id="switcher-home-tab"
               data-bs-toggle="tab"
               data-bs-target="#switcher-home"
@@ -150,7 +141,7 @@
       <div class="offcanvas-body">
         <div class="tab-content" id="nav-tabContent">
           <div
-            class="tab-pane fade show 989178547 border-0"
+            class="tab-pane fade show active border-0"
             id="switcher-home"
             role="tabpanel"
             aria-labelledby="switcher-home-tab"
@@ -639,13 +630,13 @@
                   </div>
                   <div class="form-check switch-select me-3">
                     <input
-                      class="form-check-input color-input color"
+                      class="form-check-input color-input color-transparent"
                       data-bs-toggle="tooltip"
                       data-bs-placement="top"
                       title="Transparent Menu"
                       type="radio"
                       name="menu-colors"
-                      id="switcher-menu "
+                      id="switcher-menu-transparent"
                     />
                   </div>
                 </div>
@@ -704,13 +695,13 @@
                   </div>
                   <div class="form-check switch-select me-3">
                     <input
-                      class="form-check-input color-input color"
+                      class="form-check-input color-input color-transparent"
                       data-bs-toggle="tooltip"
                       data-bs-placement="top"
                       title="Transparent Header"
                       type="radio"
                       name="header-colors"
-                      id="switcher-header "
+                      id="switcher-header-transparent"
                     />
                   </div>
                 </div>
@@ -817,7 +808,7 @@
                     />
                   </div>
                   <div
-                    class="form-check switch-select ps-0 mt-1 tooltip-static-demo color-bg"
+                    class="form-check switch-select ps-0 mt-1 tooltip-static-demo color-bg-transparent"
                   >
                     <div class="theme-container-background"></div>
                     <div class="pickr-container-background"></div>
@@ -914,7 +905,7 @@
             <!-- Start::header-element -->
             <div class="header-element">
               <div class="horizontal-logo">
-                <a href="./index.html" class="header-logo">
+                <a href="index.html" class="header-logo">
                   <img
                     src=" assets/images/brand-logos/desktop-logo.png"
                     alt="logo"
@@ -1396,7 +1387,9 @@
                 </div>
                 <div class="p-5 empty-item1 d-none">
                   <div class="text-center">
-                    <span class="avatar avatar-xl avatar-rounded bg-secondary">
+                    <span
+                      class="avatar avatar-xl avatar-rounded bg-secondary-transparent"
+                    >
                       <i class="ri-notification-off-line fs-2"></i>
                     </span>
                     <h6 class="fw-medium mt-3">No New Notifications</h6>
@@ -1437,14 +1430,14 @@
               >
                 <li>
                   <div class="dropdown-item text-center border-bottom">
-                    <span> Company ! </span>
+                    <span> Raja Shukla </span>
                     <span class="d-block fs-12 text-muted">RO Dashboard</span>
                   </div>
                 </li>
                 <li>
                   <a class="dropdown-item d-flex align-items-center" href="#"
                     ><i
-                      class="fe fe-user p-1 rounded-circle bg-primary me-2 fs-16"
+                      class="fe fe-user p-1 rounded-circle bg-primary-transparent me-2 fs-16"
                     ></i
                     >Profile</a
                   >
@@ -1452,7 +1445,7 @@
                 <li>
                   <a class="dropdown-item d-flex align-items-center" href="#"
                     ><i
-                      class="fe fe-mail p-1 rounded-circle bg-primary me-2 fs-16"
+                      class="fe fe-mail p-1 rounded-circle bg-primary-transparent me-2 fs-16"
                     ></i
                     >Mail Inbox</a
                   >
@@ -1460,7 +1453,7 @@
                 <li>
                   <a class="dropdown-item d-flex align-items-center" href="#"
                     ><i
-                      class="fe fe-database p-1 rounded-circle bg-primary klist me-2 fs-16"
+                      class="fe fe-database p-1 rounded-circle bg-primary-transparent klist me-2 fs-16"
                     ></i
                     >File Manger<span
                       class="badge bg-primary1 text-fixed-white ms-auto fs-9"
@@ -1471,7 +1464,7 @@
                 <li>
                   <a class="dropdown-item d-flex align-items-center" href="#"
                     ><i
-                      class="fe fe-settings p-1 rounded-circle bg-primary ings me-2 fs-16"
+                      class="fe fe-settings p-1 rounded-circle bg-primary-transparent ings me-2 fs-16"
                     ></i
                     >Settings</a
                   >
@@ -1479,7 +1472,7 @@
                 <li class="border-top bg-light">
                   <a class="dropdown-item d-flex align-items-center" href="#"
                     ><i
-                      class="fe fe-help-circle p-1 rounded-circle bg-primary set me-2 fs-16"
+                      class="fe fe-help-circle p-1 rounded-circle bg-primary-transparent set me-2 fs-16"
                     ></i
                     >Help</a
                   >
@@ -1487,7 +1480,7 @@
                 <li>
                   <a class="dropdown-item d-flex align-items-center" href="#"
                     ><i
-                      class="fe fe-lock p-1 rounded-circle bg-primary ut me-2 fs-16"
+                      class="fe fe-lock p-1 rounded-circle bg-primary-transparent ut me-2 fs-16"
                     ></i
                     >Log Out</a
                   >
@@ -1506,7 +1499,7 @@
       <aside class="app-sidebar sticky" id="sidebar">
         <!-- Start::main-sidebar-header -->
         <div class="main-sidebar-header" style="background-color: white">
-          <a href="" class="header-logo">
+          <a href="index.html" class="header-logo">
             <img
               src=" assets/images/brand-logos/desktop-logo.png"
               alt="logo"
@@ -1617,10 +1610,14 @@
                 </a>
                 <ul class="slide-menu child1">
                   <li class="slide">
-                    <a href="./manage-supplies.html" class="side-menu__item">View All Supplies</a>
+                    <a href="./manage-supplies.html" class="side-menu__item"
+                      >View All Supplies</a
+                    >
                   </li>
                   <li class="slide">
-                    <a href="./add-supply.html" class="side-menu__item">Add New Supply</a>
+                    <a href="./add-supply.html" class="side-menu__item"
+                      >Add New Supply</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -1648,10 +1645,14 @@
                 </a>
                 <ul class="slide-menu child1">
                   <li class="slide">
-                    <a href="./manage-events.html" class="side-menu__item">View All Events</a>
+                    <a href="./manage-events.html" class="side-menu__item"
+                      >View All Events</a
+                    >
                   </li>
                   <li class="slide">
-                    <a href="./add-event.html" class="side-menu__item">Add New Event</a>
+                    <a href="./add-event.html" class="side-menu__item"
+                      >Add New Event</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -1682,10 +1683,14 @@
                 </a>
                 <ul class="slide-menu child1">
                   <li class="slide">
-                    <a href="./manage-members.html" class="side-menu__item">View All Members</a>
+                    <a href="./manage-members.html" class="side-menu__item"
+                      >View All Members</a
+                    >
                   </li>
                   <li class="slide">
-                    <a href="./add-member.html" class="side-menu__item">Add New Member</a>
+                    <a href="./add-member.html" class="side-menu__item"
+                      >Add New Member</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -1728,6 +1733,174 @@
                 </ul>
               </li>
               <!-- End::slide -->
+
+                 <!-- Start::slide -->
+                 <li class="slide has-sub">
+                  <a href="javascript:void(0);" class="side-menu__item">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 side-menu__icon"
+                    fill="none"
+                    viewbox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"
+                    ></path>
+                  </svg>
+                    <span class="side-menu__label"
+                      >Inventory <br />
+                      Managment</span
+                    >
+                    <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                  </a>
+                  <ul class="slide-menu child1">
+                    <li class="slide">
+                      <a href="./manage-inventory.html" class="side-menu__item"
+                        >View All Inventory</a
+                      >
+                    </li>
+                    <li class="slide">
+                      <a href="./add-inventory.html" class="side-menu__item"
+                        >Add New Inventory</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <!-- End::slide -->
+
+
+                   <!-- Start::slide -->
+              <li class="slide has-sub">
+                <a href="javascript:void(0);" class="side-menu__item">
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 side-menu__icon"
+                  fill="none"
+                  viewbox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"
+                  ></path>
+                </svg>
+                  <span class="side-menu__label"
+                    >Accolades <br />
+                    Management</span
+                  >
+                  <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                </a>
+                <ul class="slide-menu child1">
+                  <li class="slide">
+                    <a href="./manage-accolades.html" class="side-menu__item"
+                      >View All Accolades</a
+                    >
+                  </li>
+                  <li class="slide">
+                    <a href="./add-accolades.html" class="side-menu__item"
+                      >Add New Accolade</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <!-- End::slide -->
+
+              <li class="slide has-sub">
+                <a href="javascript:void(0);" class="side-menu__item">
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 side-menu__icon"
+                  fill="none"
+                  viewbox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"
+                  ></path>
+                </svg>
+                  <span class="side-menu__label"
+                    >Manage Member's <br />
+                    Payments</span
+                  >
+                  <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                </a>
+                <ul class="slide-menu child1">
+                  <li class="slide">
+                    <a href="./manage-new-member-payment.html" class="side-menu__item"
+                      >New Member Payment</a
+                    >
+                  </li>
+                  <li class="slide">
+                    <a href="./manage-member-renewal-payment.html" class="side-menu__item"
+                      >Renewal Payment</a
+                    >
+                  </li>
+                  <li class="slide">
+                    <a href="./manage-member-renewal-payment-with-late-fee.html" class="side-menu__item"
+                      >Renewal Payment With Late Fee</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="slide ">
+                <a href="./manage-training-payments.html" class="side-menu__item">
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 side-menu__icon"
+                  fill="none"
+                  viewbox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"
+                  ></path>
+                </svg>
+                  <span class="side-menu__label"
+                    >Manage Training <br />
+                    Payments</span
+                  >
+                  
+                </a>
+                
+              </li>
+              
+              <li class="slide ">
+                <a href="./manage-meeting-payments.html" class="side-menu__item">
+                  <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 side-menu__icon"
+                  fill="none"
+                  viewbox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"
+                  ></path>
+                </svg>
+                  <span class="side-menu__label"
+                    >Manage Meeting <br />
+                    Payments</span
+                  >
+                  
+                </a>
+                
+              </li>
 
               <!-- Start::slide -->
               <li class="slide has-sub">
@@ -1795,8 +1968,8 @@
               <!-- End::slide -->
 
               <!-- Start::slide -->
-              <li class="slide">
-                <a href="#" class="side-menu__item">
+              <li class="slide has-sub">
+                <a href="javascript:void(0);" class="side-menu__item">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="w-6 h-6 side-menu__icon"
@@ -1808,39 +1981,24 @@
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      d="M4.098 19.902a3.75 3.75 0 0 0 5.304 0l6.401-6.402M6.75 21A3.75 3.75 0 0 1 3 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 0 0 3.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008Z"
+                      d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"
                     ></path>
                   </svg>
-
-                  <span class="side-menu__label"
-                    >Manage <br />
-                    Training Payments <br> (to be discuss)</span
-                  >
+                  <span class="side-menu__label">Manage Expenses</span>
+                  <i class="ri-arrow-down-s-line side-menu__angle"></i>
                 </a>
-              </li>
-              <!-- End::slide -->
-              <!-- Start::slide -->
-              <li class="slide">
-                <a href="#" class="side-menu__item">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="w-6 h-6 side-menu__icon"
-                    fill="none"
-                    viewbox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"
-                    ></path>
-                  </svg>
-                  <span class="side-menu__label"
-                    >Manage <br />
-                    Meeting Payments <br> (to be discuss)</span
-                  >
-                </a>
+                <ul class="slide-menu child1">
+                  <li class="slide">
+                    <a href="./manage-expense.html" class="side-menu__item"
+                      >View All Expenses</a
+                    >
+                  </li>
+                  <li class="slide">
+                    <a href="./add-expense.html" class="side-menu__item"
+                      >Add New Expense</a
+                    >
+                  </li>
+                </ul>
               </li>
               <!-- End::slide -->
 
@@ -1975,637 +2133,283 @@
       <!-- Start::app-content -->
       <div class="main-content app-content">
         <div class="container-fluid">
-          <!-- Start::page-header -->
-          <div
-            class="d-flex align-items-center justify-content-between page-header-breadcrumb flex-wrap gap-2"
-          >
-            <div>
-              <nav>
-                <ol class="breadcrumb mb-1">
-                  <li class="breadcrumb-item">
-                    <a href="javascript:void(0);"> Total Visitor's Balance </a>
-                  </li>
-                  <li class="breadcrumb-item active" aria-current="page">
-                    View All Balance
-                  </li>
-                </ol>
-              </nav>
-              <h1 class="page-title fw-medium fs-18 mb-0">
-                Manage Visitor's Balance
-              </h1>
-            </div>
-            <div class="btn-list">
-              <button
-                class="btn btn-primary btn-wave me-0"
-                style="background-color: #d01f2f !important; border: #d01f2f"
-              >
-                <i class="ri-share-forward-line me-1"></i> Export All
-                Balance Sheet
-              </button>
-            </div>
-          </div>
-          <!-- End::page-header -->
 
-          <!-- Start::row-1 -->
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="row">
-                <div class="col-xxl-12 col-xl-12">
-                  <div class="row" style="display: flex; justify-content: center;">
-                    <div class="col-xxl-3">
-                      <div
-                        class="card custom-card overflow-hidden main-content-card"
-                      >
-                        <div
-                          class="card-body p-4"
-                          style="background-color: gainsboro"
-                        >
-                          <div class="d-flex align-items-start gap-3">
-                            <div class="flex-fill">
-                              <h6 class="mb-2 fs-12">
-                                Total Visitor's Balance (in ₹)
-                              </h6>
-                              <div class="pb-0 mt-0">
-                                <div>
-                                  <h4 class="fw-medium mb-1">
-                                    ₹<span class="count-up" data-count="385"
-                                      >5,00,000</span
-                                    >
-                                  </h4>
+                
+            <!-- Start::page-header -->
+            <div class="d-flex align-items-center justify-content-between page-header-breadcrumb flex-wrap gap-2">
+                <div>
+                    <nav>
+                        <ol class="breadcrumb mb-1">
+                            <li class="breadcrumb-item">
+                                <a href="javascript:void(0);" style="color: #d01f2f;">
+                                    View Invoice
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">Invoice Details</li>
+                        </ol>
+                    </nav>
+                    <h1 class="page-title fw-medium fs-18 mb-0">Showing Invoice:</h1>
+                </div>
+                <div class="btn-list">
+                    <button class="btn btn-danger btn-wave me-0">
+                        <i class="ri-share-forward-line me-1"></i> Share Bill
+                    </button>
+                </div>
+            </div>
+            <!-- End::page-header -->
+
+            <!-- Start::row-1 -->
+            <div class="row">
+                <div class="col-xl-9">
+                    <div class="card custom-card">
+                        <div class="card-header d-md-flex d-block">
+                            <div class="h5 mb-0 d-sm-flex d-bllock align-items-center">
+                                <div class="ms-sm-2 ms-0 mt-sm-0 mt-2">
+                                    <div class="h6 fw-medium mb-0">Bill INVOICE : <span class="text-primary" style="color: #d01f2f !important;">#1855</span></div>
                                 </div>
-                              </div>
                             </div>
-                            <div
-                              class="main-card-icon primary border-3 border border-primary border-opacity-50 rounded-circle"
-                            >
-                              <div
-                                class="avatar avatar-md bg-primary border border-primary border-opacity-10 avatar-rounded"
-                              >
-                                <div class="avatar avatar-sm svg-white">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="44"
-                                    height="44"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="#d01f2f"
-                                    fill="none"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                  >
-                                    <path
-                                      stroke="none"
-                                      d="M0 0h24v24H0z"
-                                      fill="none"
-                                    />
-                                    <path
-                                      d="M7 8v-2a2 2 0 0 1 2 -2h9a2 2 0 0 1 2 2v2"
-                                    />
-                                    <path
-                                      d="M7 16v2a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-2"
-                                    />
-                                    <rect
-                                      x="3"
-                                      y="8"
-                                      width="18"
-                                      height="8"
-                                      rx="2"
-                                    />
-                                    <circle cx="16.5" cy="12" r="1.5" />
-                                  </svg>
-                                </div>
-                              </div>
+                            <div class="ms-auto mt-md-0 mt-2">
+                                <button class="btn btn-sm btn-danger me-1" onclick="javascript:window.print();">Print<i class="ri-printer-line ms-1 align-middle d-inline-block"></i></button>
+                                <button class="btn btn-sm btn-success">Save As PDF<i class="ri-file-pdf-line ms-1 align-middle d-inline-block"></i></button>
                             </div>
-                          </div>
                         </div>
-                      </div>
+                        <div class="card-body">
+                            <div class="row gy-3">
+                                <div class="col-xl-12">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+                                            <p class="text-muted mb-2">
+                                                Billing From :
+                                            </p>
+                                            <p class="fw-bold mb-1">
+                                                RO Fintech Pvt.Ltd.
+                                            </p>
+                                            <p class="mb-1 text-muted">
+                                                House No. D-2, Ground Floor, 
+                                            </p>
+                                            <p class="mb-1 text-muted">
+                                                Gate No.3, above Dronacharya The Gym, Nangal Dewat, Vasant Kunj, New Delhi, Delhi 110070
+                                            </p>
+                                            <p class="mb-1 text-muted">
+                                                bni@gmail.com
+                                            </p>
+                                            <p class="mb-1 text-muted">
+                                                099100 30901
+                                            </p>
+                                            <p class="text-muted">For more information check for <a href="javascript:void(0);" class="text-primary fw-medium"><u>GSTIN</u></a> Details.</p>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 ms-auto mt-sm-0 mt-3">
+                                            <p class="text-muted mb-2">
+                                                Billing To :
+                                            </p>
+                                            <p class="fw-bold mb-1">
+                                                Raja Shukla
+                                            </p>
+                                            <p class="text-muted mb-1">
+                                                B-27/A, Third Floor, Dwarka Mor,
+
+                                            </p>
+                                            <p class="text-muted mb-1">
+                                                Patel Garden Sec-15, Dwarka (Near,
+Dwarka Hospital) Delhi-110078
+                                            </p>
+                                            <p class="text-muted mb-1">
+                                                rajashukla@gmailcom
+                                            </p>
+                                            <p class="text-muted">
+                                                +91-99 0992 0992
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3">
+                                    <p class="fw-medium text-muted mb-1">Invoice ID :</p>
+                                    <p class="fs-15 mb-1">#SHG148756965</p>
+                                </div>
+                                <div class="col-xl-3">
+                                    <p class="fw-medium text-muted mb-1">Date Issued :</p>
+                                    <p class="fs-15 mb-1">15,May 2024 - <span class="text-muted fs-12">11:13AM</span></p>
+                                </div>
+                                <div class="col-xl-3">
+                                    <p class="fw-medium text-muted mb-1">Due Date :</p>
+                                    <p class="fs-15 mb-1">28,June 2024</p>
+                                </div>
+                                <div class="col-xl-3">
+                                    <p class="fw-medium text-muted mb-1">Due Amount :</p>
+                                    <p class="fs-16 mb-1 fw-medium">₹4,877.11</p>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div class="table-responsive">
+                                        <table class="table nowrap text-nowrap border mt-4">
+                                            <thead>
+                                                <tr>
+                                                    <th>BRAND NAME</th>
+                                                    <th>DESCRIPTION</th>
+                                                    <th>QUANTITY</th>
+                                                    <th>PRICE PER UNIT</th>
+                                                    <th>TOTAL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="fw-medium">
+                                                            Cresta & Co (Headphones)
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="text-muted">
+                                                            Noise-cancelling technology, Bluetooth connectivity
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-quantity-container">
+                                                        3
+                                                    </td>
+                                                    <td>
+                                                        ₹84
+                                                    </td>
+                                                    <td>
+                                                        ₹251
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="fw-medium">
+                                                            Zephyr & Sons (Sneakers)
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="text-muted">
+                                                            Lightweight mesh upper, durable rubber outsole.
+                                                        </div>
+                                                    </td>
+                                                    <td class="product-quantity-container">
+                                                        2
+                                                    </td>
+                                                    <td>
+                                                        ₹503
+                                                    </td>
+                                                    <td>
+                                                        ₹503
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="3"></td>
+                                                    <td colspan="2">
+                                                        <table class="table table-sm text-nowrap mb-0 table-borderless">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">
+                                                                        <p class="mb-0">Sub Total :</p>
+                                                                    </th>
+                                                                    <td>
+                                                                        <p class="mb-0 fw-medium fs-15">₹1,784</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">
+                                                                        <p class="mb-0">Avail Discount :</p>
+                                                                    </th>
+                                                                    <td>
+                                                                        <p class="mb-0 fw-medium fs-15">₹15.58</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">
+                                                                        <p class="mb-0">Coupon Discount <span class="text-success">(3.5%)</span> :</p>
+                                                                    </th>
+                                                                    <td>
+                                                                        <p class="mb-0 fw-medium fs-15">₹987.56</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">
+                                                                        <p class="mb-0">Vat <span class="text-danger">(7.5%)</span> :</p>
+                                                                    </th>
+                                                                    <td>
+                                                                        <p class="mb-0 fw-medium fs-15">₹654.69</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">
+                                                                        <p class="mb-0">Due Till Date :</p>
+                                                                    </th>
+                                                                    <td>
+                                                                        <p class="mb-0 fw-medium fs-15">₹1</p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">
+                                                                        <p class="mb-0 fs-14">Total :</p>
+                                                                    </th>
+                                                                    <td>
+                                                                        <p class="mb-0 fw-medium fs-16 text-success">₹3,846.53</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div>
+                                        <label for="invoice-note" class="form-label">Note:</label>
+                                        <textarea class="form-control form-control-light" id="invoice-note" rows="3">If you're not satisfied with the product, you can return the unused item within 10 days of the delivery date. For refund options, please visit the official website and review the available refund policies.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer text-end">
+                            <button class="btn btn-danger">Download <i class="ri-download-2-line ms-1 align-middle"></i></button>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
+                <div class="col-xl-3">
+                    <div class="card custom-card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                Mode Of Payment
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row gy-3">
+                                <div class="col-xl-12">
+                                    <p class="fs-14 fw-medium">
+                                        Credit/Debit Card
+                                    </p>
+                                    <p>
+                                        <span class="fw-medium text-muted fs-12">Card Number :</span> 1323 3213 4546 XXXX
+                                    </p>
+                                    <p>
+                                        <span class="fw-medium text-muted fs-12">Name On Card :</span> Raja Shukla
+                                    </p>
+                                    <p>
+                                        <span class="fw-medium text-muted fs-12">Total Amount :</span> <span class="text-success fw-medium fs-14">₹3,846.53</span>
+                                    </p>
+                                    <p>
+                                        <span class="fw-medium text-muted fs-12">Due Date :</span> 28,June 2024 - <span class="text-danger fs-12 fw-medium">18 days due</span>
+                                    </p>
+                                    <p>
+                                        <span class="fw-medium text-muted fs-12">Invoice Status : <span class="badge bg-primary3-transparent">Processing</span></span>
+                                    </p>
+                                    <div class="alert alert-primary2" role="alert">
+                                        Please Make sure to pay the invoice bill within 120 days.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-xl-12">
-              <div class="card custom-card">
-                <div
-                  class="card-header justify-content-between"
-                  style="background-color: gainsboro !important"
-                >
-                  <div class="card-title">All Visitor's Transactions</div>
-                  <div class="d-flex">
-                    <button
-                      class="btn btn-outline-light border dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="ti ti-sort-descending-2 me-1"></i> Region
-                    </button>
-                    <button
-                      class="btn btn-outline-light border dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="ti ti-sort-descending-2 me-1"></i> Chapter
-                    </button>
-                    <button
-                      class="btn btn-outline-light border dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="ti ti-sort-descending-2 me-1"></i> July
-                    </button>
-                    <button
-                      class="btn btn-outline-light border dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="ti ti-sort-descending-2 me-1"></i> Monthly
-                    </button>
-                    <button
-                      class="btn btn-outline-light border dropdown-toggle"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <i class="ti ti-sort-descending-2 me-1"></i> Filter
-                    </button>
-                    <a
-                      href=""
-                      class="btn btn-sm btn-primary btn-wave waves-light"
-                      style="background-color: #d01f2f Im !important"
-                      ><i class="ri-add-line fw-medium align-middle me-1"></i>
-                      Create New Visitor</a
-                    >
-                  </div>
-                </div>
-                <div class="card-body p-0">
-                  <div class="table-responsive">
-                    <table class="table text-nowrap">
-                      <thead>
-                        <tr>
-                          <th scope="col">S.No.</th>
-                          <th scope="col">Amount</th>
-                          <th scope="col">Payment Method</th>
-                          <th scope="col">Visitor</th>
-                          <th scope="col">Status</th>
-                          <th scope="col">Date</th>
-                          <th scope="col">Action</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr class="invoice-list">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              
-                              <div>
-                                <p>1</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                          <b>+ ₹1,000 </b> 
-                            <a
-                              href="javascript:void(0);"
-                              class="fw-medium text-success"
-                            >
-                            <br>
-                              View
-                            </a>
-                          </td>
-                          <td>
-                            
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://w7.pngwing.com/pngs/962/794/png-transparent-mastercard-credit-card-mastercard-logo-mastercard-logo-love-text-heart.png"
-                                  alt=""
-                                /> </span
-                              >Debit Card
-                            </div></td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                                  alt=""
-                                /> </span
-                              >Raja Shukla
-                            </div>
-                          </td>
-                          <td>
-                            <span class="badge bg-success "
-                              >Paid</span
-                            >
-                          </td>
-                          <td>25,May 2024</td>
-                          <td>
-                            <a href="./view-transaction.html"
-                              class="btn btn-primary-light btn-icon btn-sm"
-                            >
-                              <i class="ri-printer-line"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr class="invoice-list">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              
-                              <div>
-                                <p>2</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                        <b>+ ₹₹1,000</b>    <br>  
-                            <a
-                              href="javascript:void(0);"
-                              class="fw-medium text-success"
-                            >
-                              View
-                            </a>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://w7.pngwing.com/pngs/962/794/png-transparent-mastercard-credit-card-mastercard-logo-mastercard-logo-love-text-heart.png"
-                                  alt=""
-                                /> </span
-                              >Credit Card
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                                  alt=""
-                                /> </span
-                              >Raja Shukla
-                            </div>
-                          </td>
-                          <td>
-                            <span class="badge bg-warning "
-                              >Pending</span
-                            >
-                          </td>
-                          <td>13,May 2024</td>
-                          <td>
-                            <a href="./view-transaction.html"
-                              class="btn btn-primary-light btn-icon btn-sm"
-                            >
-                              <i class="ri-printer-line"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr class="invoice-list">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              
-                              <div>
-                                <p>3</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                        <b>+₹1,000</b>   <br>
-                            <a
-                              href="javascript:void(0);"
-                              class="fw-medium text-success"
-                            >
-                              View
-                            </a>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://economictimes.indiatimes.com/thumb/msid-74960608,width-1200,height-900,resizemode-4,imgsize-49172/upi-twitter.jpg?from=mdr"
-                                  alt=""
-                                /> </span
-                              >UPI
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                                  alt=""
-                                /> </span
-                              >Raja Shukla
-                            </div>
-                          </td>
-                          <td>
-                            <span class="badge bg-danger "
-                              >Overdue</span
-                            >
-                          </td>
-                          <td>30,May 2024</td>
-                          <td>
-                            <a href="./view-transaction.html"
-                              class="btn btn-primary-light btn-icon btn-sm"
-                            >
-                              <i class="ri-printer-line"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr class="invoice-list">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              
-                              <div>
-                                <p>4</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                        <b>+ ₹1,000</b>   <br>
-                            <a
-                              href="javascript:void(0);"
-                              class="fw-medium text-success"
-                            >
-                              View
-                            </a>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://w7.pngwing.com/pngs/962/794/png-transparent-mastercard-credit-card-mastercard-logo-mastercard-logo-love-text-heart.png"
-                                  alt=""
-                                /> </span
-                              >Debit Card
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                                  alt=""
-                                /> </span
-                              >Raja Shukla
-                            </div>
-                          </td>
-                          <td>
-                            <span class="badge bg-success "
-                              >Paid</span
-                            >
-                          </td>
-                          <td>18,May 2024</td>
-                          <td>
-                            <a href="./view-transaction.html"
-                              class="btn btn-primary-light btn-icon btn-sm"
-                            >
-                              <i class="ri-printer-line"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr class="invoice-list">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              
-                              <div>
-                                <p>5</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                        <b>+ ₹1,000</b>   <br>
-                            <a
-                              href="javascript:void(0);"
-                              class="fw-medium text-success"
-                            >
-                              View
-                            </a>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://w7.pngwing.com/pngs/962/794/png-transparent-mastercard-credit-card-mastercard-logo-mastercard-logo-love-text-heart.png"
-                                  alt=""
-                                /> </span
-                              >Credit Card
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                                  alt=""
-                                /> </span
-                              >Raja Shukla
-                            </div>
-                          </td>
-                          <td>
-                            <span class="badge bg-primary "
-                              >Due By 1 Day</span
-                            >
-                          </td>
-                          <td>18,May 2024</td>
-                          <td>
-                            <a href="./view-transaction.html"
-                              class="btn btn-primary-light btn-icon btn-sm"
-                            >
-                              <i class="ri-printer-line"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr class="invoice-list">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              
-                              <div>
-                                <p>6</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                         <b>+ ₹1,000</b>  <br>
-                            <a
-                              href="javascript:void(0);"
-                              class="fw-medium text-success"
-                            >
-                              View
-                            </a>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://economictimes.indiatimes.com/thumb/msid-74960608,width-1200,height-900,resizemode-4,imgsize-49172/upi-twitter.jpg?from=mdr"
-                                  alt=""
-                                /> </span
-                              >UPI
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                                  alt=""
-                                /> </span
-                              >Raja Shukla
-                            </div>
-                          </td>
-                          <td>
-                            <span class="badge bg-success "
-                              >Paid</span
-                            >
-                          </td>
-                          <td>18,May 2024</td>
-                          <td>
-                            <a href="./view-transaction.html"
-                              class="btn btn-primary-light btn-icon btn-sm"
-                            >
-                              <i class="ri-printer-line"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr class="invoice-list">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              
-                              <div>
-                                <p>7</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                         <b>+ ₹1,000</b>  <br>
-                            <a
-                              href="javascript:void(0);"
-                              class="fw-medium text-success"
-                            >
-                              View
-                            </a>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://st.softgamings.com/uploads/BankTransfer_logo_1200x600.png"
-                                  alt=""
-                                /> </span
-                              >Bank Transfer
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                                  alt=""
-                                /> </span
-                              >Raja Shukla
-                            </div>
-                          </td>
-                          <td>
-                            <span class="badge bg-success "
-                              >Paid</span
-                            >
-                          </td>
-                          <td>15,May 2024</td>
-                          <td>
-                            <a href="./view-transaction.html"
-                              class="btn btn-primary-light btn-icon btn-sm"
-                            >
-                              <i class="ri-printer-line"></i>
-                            </a>
-                          </td>
-                        </tr>
-                        <tr class="invoice-list">
-                          <td>
-                            <div class="d-flex align-items-center">
-                              
-                              <div>
-                                <p>8</p>
-                              </div>
-                            </div>
-                          </td>
-                          <td>
-                        <b>+ ₹1,000</b>  <br>
-                            <a
-                              href="javascript:void(0);"
-                              class="fw-medium text-success"
-                            >
-                              View
-                            </a>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://w7.pngwing.com/pngs/962/794/png-transparent-mastercard-credit-card-mastercard-logo-mastercard-logo-love-text-heart.png"
-                                  alt=""
-                                /> </span
-                              >Debit Card
-                            </div>
-                          </td>
-                          <td>
-                            <div class="d-flex align-items-center">
-                              <span class="avatar avatar-sm me-2 avatar-rounded">
-                                <img
-                                  src="https://png.pngtree.com/png-vector/20190329/ourmid/pngtree-vector-avatar-icon-png-image_889567.jpg"
-                                  alt=""
-                                /> </span
-                              >Raja Shukla
-                            </div>
-                          </td>
-                          <td>
-                            <span class="badge bg-warning "
-                              >Pending</span
-                            >
-                          </td>
-                          <td>21,May 2024</td>
-                          <td>
-                            <a href="./view-transaction.html"
-                              class="btn btn-primary-light btn-icon btn-sm"
-                            >
-                              <i class="ri-printer-line"></i>
-                            </a>
-                          </td>
-                        </tr>
-                      
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-                <div class="card-footer border-top-0">
-                  <nav aria-label="Page navigation">
-                    <ul class="pagination mb-0 float-end">
-                      <li class="page-item disabled">
-                        <a class="page-link">Previous</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:void(0);">1</a>
-                      </li>
-                      <li class="page-item active" aria-current="page">
-                        <a class="page-link" href="javascript:void(0);">2</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:void(0);">3</a>
-                      </li>
-                      <li class="page-item">
-                        <a class="page-link" href="javascript:void(0);">Next</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--End::row-1 -->
+            <!--End::row-1 -->
+
+            
         </div>
-      </div>
-      <!-- End::content  -->
+    </div>
+    <!-- End::content  -->
 
       <!-- Footer opened -->
       <footer
