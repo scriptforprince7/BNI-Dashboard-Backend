@@ -1983,7 +1983,7 @@
             <div>
               <h1 class="page-title fw-medium fs-18 mb-0">
                 <span style="font-weight: 700; font-family: Poppins"
-                  >Add New Chapter</span
+                  >Add New Expense</span
                 >
               </h1>
               <!-- <p>Manage kitty payments with just one click</p> -->
@@ -2045,32 +2045,27 @@
                             <div class="col-xl-12">
                               <label for="product-cost-add" class="form-label"
                                 ><span style="font-size: 15px"
-                                  ><b>It's time for a new chapter!</b></span
+                                  ><b
+                                    >Oops, It's time for a new Expense!</b
+                                  ></span
                                 ></label
                               >
                             </div>
-                            <div class="col-xl-6">
-                              <label for="product-cost-add" class="form-label"
-                                >Enter Chapter Name</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="product-cost-add"
-                                placeholder="New chapter name.."
-                              />
-                              <label
-                                for="product-cost-add"
-                                class="form-label mt-1 fs-12 fw-normal text-muted mb-0"
-                                ><span style="color: red"
-                                  >*Mention the acknowledged name of the
-                                  chapter</span
-                                ></label
-                              >
-                            </div>
-                            <div class="col-xl-6">
+                            <div class="col-xl-4">
+                                <label for="product-cost-add" class="form-label"
+                                  >Expense Type*</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="product-cost-add"
+                                  placeholder="Type here...."
+                                />
+
+                              </div>
+                            <div class="col-xl-4">
                               <label for="product-brand-add" class="form-label"
-                                >Choose Region</label
+                                >Choose Region*</label
                               >
                               <select
                                 class="form-control"
@@ -2084,53 +2079,9 @@
                                 <option value="Lacoste">North</option>
                               </select>
                             </div>
-                            <div class="col-xl-6">
-                              <label for="product-cost-add" class="form-label"
-                                >Chapter Fees <b>(Annualy)</b></label
-                              >
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="product-cost-add"
-                                placeholder="₹49,500/-"
-                              />
-                            </div>
-                            <div class="col-xl-6">
-                              <label for="product-cost-add" class="form-label"
-                                >Meeting Fees <b>(Quartely)</b> </label
-                              >
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="product-cost-add"
-                                placeholder="₹1,200/-"
-                              />
-                            </div>
-                            <div class="col-xl-6">
-                              <label for="product-cost-add" class="form-label"
-                                >Visitor Fee</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="product-cost-add"
-                                placeholder="₹1,000....."
-                              />
-                            </div>
-                            <div class="col-xl-6">
-                              <label for="product-cost-add" class="form-label"
-                                >Chapter Location & Venue</label
-                              >
-                              <input
-                                type="text"
-                                class="form-control"
-                                id="product-cost-add"
-                                placeholder="Vivanta by Taj....."
-                              />
-                            </div>
-                            <div class="col-xl-6">
+                            <div class="col-xl-4">
                               <label for="product-brand-add" class="form-label"
-                                >Status</label
+                                >Choose Chapter*</label
                               >
                               <select
                                 class="form-control"
@@ -2139,12 +2090,87 @@
                                 id="product-brand-add"
                               >
                                 <option value="">Select</option>
-                                <option value="Armani">Pre-Launch</option>
-                                <option value="Lacoste">Launch</option>
-                                <option value="Lacoste">Running</option>
-                                <option value="Lacoste">Upcoming</option>
+                                <option value="Armani">Prolific</option>
+                                <option value="Lacoste">Dynamic</option>
+                                <option value="Lacoste">Champion</option>
+                                <option value="Lacoste">Amigos</option>
+                                <option value="Lacoste">Beyond</option>
+                                <option value="Lacoste">BNI Fantom</option>
+                                <option value="Lacoste">BNI Logik</option>
+                                <option value="Lacoste">BNI Uno</option>
+                                <option value="Lacoste">Javelin</option>
                               </select>
                             </div>
+                            <div class="col-xl-4">
+                              <label for="product-cost-add" class="form-label"
+                                >Date*</label
+                              >
+                              <input
+                                type="date"
+                                class="form-control"
+                                id="product-cost-add"
+                                placeholder="South Ex"
+                              />
+                            </div>
+                            <div class="col-xl-4">
+                              <label for="product-cost-add" class="form-label"
+                                >Expense Amount*</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="product-cost-add"
+                                placeholder="Type here...."
+                              />
+                              <label
+                                for="product-cost-add"
+                                class="form-label mt-1 fs-12 fw-normal text-muted mb-0"
+                                ><span style="color: red"
+                                  >* Describe the actual bill cost</span
+                                ></label
+                              >
+                            </div>
+                            <div class="col-xl-4">
+                                <label for="product-brand-add" class="form-label"
+                                  >Status*</label
+                                >
+                                <select
+                                  class="form-control"
+                                  data-trigger=""
+                                  name="product-brand-add"
+                                  id="product-brand-add"
+                                >
+                                  <option value="">Select</option>
+                                  <option value="Armani">Active</option>
+                                  <option value="Lacoste">Inactive</option>on>
+                                </select>
+                              </div>
+                              <div class="col-xl-6">
+                                <label for="product-brand-add" class="form-label"
+                                  >Billing Company*</label
+                                >
+                                <select
+                                  class="form-control"
+                                  data-trigger=""
+                                  name="product-brand-add"
+                                  id="product-brand-add"
+                                >
+                                  <option value="">Select</option>
+                                  <option value="Armani">Company 1</option>
+                                  <option value="Lacoste">Company 2</option>
+                                </select>
+                              </div>
+                              <div class="col-xl-6">
+                                <label for="product-cost-add" class="form-label"
+                                  >Expense Description*</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="product-cost-add"
+                                  placeholder="paid ₹1,200 to ...."
+                                />
+                              </div>
                           </div>
                         </div>
                       </div>
@@ -2154,8 +2180,8 @@
                 <div
                   class="card-footer border-top border-block-start-dashed d-sm-flex justify-content-end"
                 >
-                  <button class="btn btn-success me-2 mb-2 mb-sm-0">
-                    Add Chapter<i class="bi bi-plus-lg ms-2"></i>
+                  <button class="btn btn-success mb-2 mb-sm-0">
+                    Add Expense <b>+</b>
                   </button>
                 </div>
               </div>
