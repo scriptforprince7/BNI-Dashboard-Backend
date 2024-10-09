@@ -1,14 +1,14 @@
 const apiUrl = 'https://bni-data-backend.onrender.com/api/members';
-const chaptersApiUrl = 'https://bni-data-backend.onrender.com/api/chapters'; // New API for fetching chapters
+const chaptersApiUrl = 'https://bni-data-backend.onrender.com/api/chapters'; // API for fetching chapters
 
 let chaptersMap = {};
-let allMembers = []; // To store the fetched members globally
+let allMembers = []; // To store fetched members globally
 let filteredMembers = []; // To store filtered members based on search
 let currentPage = 1; // Current page number
 const entriesPerPage = 30; // Number of entries per page
 
 // Show the loader
-function showLoader() {
+function showLoader() { 
   document.getElementById('loader').style.display = 'flex';
 }
 
@@ -21,6 +21,8 @@ function hideLoader() {
 async function fetchChapters() {
   try {
     const response = await fetch(chaptersApiUrl);
+    if (!response.ok) throw new Error('Network response was not ok');
+    
     const chapters = await response.json();
     chapters.forEach(chapter => {
       chaptersMap[chapter.chapter_id] = chapter.chapter_name;
@@ -34,13 +36,12 @@ async function fetchChapters() {
 async function fetchMembers() {
   showLoader(); // Show the loader
   try {
-    // First fetch the chapters
+    // Fetch chapters first
     await fetchChapters();
 
     const response = await fetch(apiUrl);
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
+    if (!response.ok) throw new Error('Network response was not ok');
+    
     allMembers = await response.json(); // Store fetched members in the global variable
     filteredMembers = [...allMembers]; // Initialize filtered members to all members initially
 
@@ -138,50 +139,98 @@ document.getElementById('searchInput').addEventListener('input', function() {
 
 // Function to setup pagination
 function setupPagination(totalMembers) {
-    const paginationElement = document.querySelector('.pagination');
-    paginationElement.innerHTML = ''; // Clear existing pagination
+  const paginationElement = document.querySelector('.pagination');
+  paginationElement.innerHTML = ''; // Clear existing pagination
   
-    const totalPages = Math.ceil(totalMembers / entriesPerPage);
+  const totalPages = Math.ceil(totalMembers / entriesPerPage);
 
-    // Previous button
-    const prevPage = document.createElement('li');
-    prevPage.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
-    prevPage.innerHTML = `<a class="page-link" href="javascript:void(0)">Previous</a>`;
-    prevPage.onclick = () => {
-      if (currentPage > 1) {
-        currentPage--;
-        displayMembers(filteredMembers.slice((currentPage - 1) * entriesPerPage, currentPage * entriesPerPage));
-        setupPagination(filteredMembers.length);
-      }
-    };
-    paginationElement.appendChild(prevPage);
-  
-    // Page numbers
-    for (let i = 1; i <= totalPages; i++) {
-      const pageItem = document.createElement('li');
-      pageItem.className = `page-item ${currentPage === i ? 'active' : ''}`;
-      pageItem.innerHTML = `<a class="page-link" href="javascript:void(0)">${i}</a>`;
-      pageItem.onclick = () => {
-        currentPage = i;
-        displayMembers(filteredMembers.slice((currentPage - 1) * entriesPerPage, currentPage * entriesPerPage));
-        setupPagination(filteredMembers.length);
-      };
-      paginationElement.appendChild(pageItem);
+  // Previous button
+  const prevPage = document.createElement('li');
+  prevPage.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+  prevPage.innerHTML = `<a class="page-link" href="javascript:void(0)">Previous</a>`;
+  prevPage.onclick = () => {
+    if (currentPage > 1) {
+      currentPage--;
+      displayMembers(filteredMembers.slice((currentPage - 1) * entriesPerPage, currentPage * entriesPerPage));
+      setupPagination(filteredMembers.length);
     }
+  };
+  paginationElement.appendChild(prevPage);
   
-    // Next button
-    const nextPage = document.createElement('li');
-    nextPage.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
-    nextPage.innerHTML = `<a class="page-link" href="javascript:void(0)">Next</a>`;
-    nextPage.onclick = () => {
-      if (currentPage < totalPages) {
-        currentPage++;
-        displayMembers(filteredMembers.slice((currentPage - 1) * entriesPerPage, currentPage * entriesPerPage));
-        setupPagination(filteredMembers.length);
-      }
+  // Page numbers
+  for (let i = 1; i <= totalPages; i++) {
+    const pageItem = document.createElement('li');
+    pageItem.className = `page-item ${currentPage === i ? 'active' : ''}`;
+    pageItem.innerHTML = `<a class="page-link" href="javascript:void(0)">${i}</a>`;
+    pageItem.onclick = () => {
+      currentPage = i;
+      displayMembers(filteredMembers.slice((currentPage - 1) * entriesPerPage, currentPage * entriesPerPage));
+      setupPagination(filteredMembers.length);
     };
-    paginationElement.appendChild(nextPage);
+    paginationElement.appendChild(pageItem);
+  }
+
+  // Next button
+  const nextPage = document.createElement('li');
+  nextPage.className = `page-item ${currentPage === totalPages ? 'disabled' : ''}`;
+  nextPage.innerHTML = `<a class="page-link" href="javascript:void(0)">Next</a>`;
+  nextPage.onclick = () => {
+    if (currentPage < totalPages) {
+      currentPage++;
+      displayMembers(filteredMembers.slice((currentPage - 1) * entriesPerPage, currentPage * entriesPerPage));
+      setupPagination(filteredMembers.length);
+    }
+  };
+  paginationElement.appendChild(nextPage);
 }
 
-// Call fetchMembers to load data when the page loads
+// Function to fetch and display chapters
+async function loadChapters() {
+  showLoader();
+  try {
+    const response = await fetch(chaptersApiUrl);
+    if (!response.ok) throw new Error('Network response was not ok');
+    
+    const chapters = await response.json();
+    displayChapters(chapters);
+  } catch (error) {
+    console.error('There was a problem fetching the chapters data:', error);
+  } finally {
+    hideLoader();
+  }
+}
+
+// Function to display chapters in the table
+function displayChapters(chapters) {
+  const tableBody = document.getElementById('chaptersTableBody');
+  tableBody.innerHTML = ''; // Clear existing rows
+
+  chapters.forEach((chapter, index) => {
+    const row = document.createElement('tr');
+    
+    row.innerHTML = `
+      <td>${index + 1}</td>
+      <td style="border: 1px solid grey;">
+        <div class="d-flex align-items-center">
+          <div class="ms-2">
+            <p class="fw-semibold mb-0 d-flex align-items-center">
+              <a href="#">${chapter.chapter_name}</a>
+            </p>
+          </div>
+        </div>
+      </td>
+      <td style="border: 1px solid grey;">
+        <div class="d-flex align-items-center">
+          <b>${chapter.region_name}</b>
+        </div>
+      </td>
+      <td style="border: 1px solid grey;">${chapter.chapter_id}</td>
+    `;
+
+    // Append the row to the table body
+    tableBody.appendChild(row);
+  });
+}
+
+// Call fetchMembers on page load
 window.onload = fetchMembers;
